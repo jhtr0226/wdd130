@@ -71,7 +71,7 @@ nav {
     justify-content: space-around;
 }
 
-nav a :hover {
+nav a:hover {
     background-color: #5995ed;
     color: #ffffff;
 }
