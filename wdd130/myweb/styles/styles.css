@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:ital,wght@1,500&family=Josefin+Slab:ital,wght@1,500&family=Orbitron:wght@500&display=swap');
+
+:root {
+    
+    --headers-font: "Orbitron";
+    --paragraphs-font: Exo, Helvetica, sans-serif;
+
+
+}
+
+
+
+
+
+
 *
 {
     margin: 0;
@@ -67,6 +82,14 @@ section .star.star8 {
     }
 }
 /*----------------------------------------*/
+/*Colors
+#333333 jet?
+#8D99AE cool gray
+#808080 gray
+#00008B navy blue
+#191970 midnight blue
+*/
+
 header h1, header p {
     position: relative;
     z-index: 1;
@@ -80,7 +103,7 @@ header nav a{
     text-align: center;
 }
 header nav {
-    background-color: darkblue;
+    background-color: #00008B;
     padding: 15px;
     position: relative;
     z-index: 1;
@@ -90,7 +113,7 @@ header nav {
 footer, footer p{
     text-align: center;
     color: white;
-    background-color: darkblue;
+    background-color: #00008B;
 }
 footer a, header a {
     color: white;
@@ -113,24 +136,24 @@ main p {
     color: white;
     padding: 15px;
 }
-.the_windows {
+#the_windows {
     display: grid;
     grid-template-columns: 1fr, 1fr;
-    gap: 50px;
+    gap: 20px;
     
 }
 .left {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: aqua;
+    background-color: #333333;
 }
 .right  {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: bisque;
+    background-color: #8D99AE;
 }
 .bottom {
     grid-column: 1/3;
     grid-row: 2/3;
-    background-color: blue;
+    background-color: #191970;
 }
