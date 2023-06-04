@@ -2,6 +2,11 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 
+.logo-pic {
+    border-radius: 50px;
+    width: 250px;
+    height: auto;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:ital,wght@1,500&family=Josefin+Slab:ital,wght@1,500&family=Orbitron:wght@500&display=swap');
 
