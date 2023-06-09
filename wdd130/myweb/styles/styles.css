@@ -90,6 +90,11 @@ section .star.star8 {
 #191970 midnight blue
 */
 
+body {
+    font-size: 18px;
+}
+
+
 header h1, header p {
     position: relative;
     z-index: 1;
@@ -98,9 +103,10 @@ header h1, header p {
     
 }
 header nav a{
-    font-size: 14px;
+    font-size: 16px;
     padding: 35px;
     text-align: center;
+
 }
 header nav {
     background-color: #00008B;
@@ -109,6 +115,11 @@ header nav {
     z-index: 1;
     color: white;
     text-align: center;
+    font-family: var(--headers-font);
+
+}
+footer {
+    margin-top: auto;
 }
 footer, footer p{
     text-align: center;
@@ -136,28 +147,49 @@ main p {
     padding: 15px;
 }
 #the_windows {
+    padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-row: repeat(12, 1fr);
+    gap: 80px;
     
 }
 .left {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 2/4;
+    grid-row: 1/10;
     background-color: #333333;
 }
 .right  {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 9/11;
+    grid-row: 1/10;
     background-color: #8D99AE;
 }
 .bottom {
-    grid-column: 1/3;
-    grid-row: 2/3;
+    text-align: center;
+    justify-content: center;
+    grid-column: 1/12;
+    grid-row: 11/12;
     background-color: #191970;
+    margin-bottom: 20px;
+
 }
+.middle-one {
+    background-color: #333333;
+    grid-column: 5/8;
+    grid-row: 1/5;
 
+}
+.middle-two {
+    background-color: #8D99AE;
+    grid-column: 5/8;
+    grid-row: 4/8;
+}
+.middle-three {
+    background-color: #191970;
+    grid-column: 5/8;
+    grid-row: 9/11;
 
+}
 
 
 
@@ -168,4 +200,37 @@ main p {
     border-radius: 50%;
     width: 150px;
     height: auto;
+
+}
+#logo {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+.grid-a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.initial-text {
+    grid-column: 2/3;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: var(--headers-font);
+    font-size: 3em;
+}
+.initial-text1 {
+    grid-column: 2/3;
+    font-family: var(--paragraphs-font);
+    margin-top: -55px;
+}
+.initial-text2 {
+    grid-column: 2/3;
+    font-family: var(--paragraphs-font);
+    margin-top: -25px;
+    margin-bottom: 20px;
 }
