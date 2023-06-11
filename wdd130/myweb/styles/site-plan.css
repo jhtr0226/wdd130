@@ -35,6 +35,15 @@ Fonts are separated by a | */
     width: 250px;
     height: auto;
 }
+.plan-pic {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.wires {
+  width: 500px;
+  height: auto;
+}
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {

@@ -155,6 +155,7 @@ main p {
     
 }
 .left {
+    border-radius: 15px;
     grid-column: 2/4;
     grid-row: 1/10;
     background-color: #333333;
