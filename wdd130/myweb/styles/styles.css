@@ -8,7 +8,10 @@
 
 }
 
-
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 
 
@@ -161,11 +164,13 @@ main p {
     background-color: #333333;
 }
 .right  {
+    border-radius: 15px;
     grid-column: 9/11;
     grid-row: 1/10;
     background-color: #8D99AE;
 }
 .bottom {
+    border-radius: 15px;
     text-align: center;
     justify-content: center;
     grid-column: 1/12;
@@ -175,17 +180,18 @@ main p {
 
 }
 .middle-one {
+    border-radius: 15px;
     background-color: #333333;
     grid-column: 5/8;
     grid-row: 1/5;
 
 }
-.middle-two {
+.middle-two {border-radius: 15px;
     background-color: #8D99AE;
     grid-column: 5/8;
     grid-row: 4/8;
 }
-.middle-three {
+.middle-three {border-radius: 15px;
     background-color: #191970;
     grid-column: 5/8;
     grid-row: 9/11;

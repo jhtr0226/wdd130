@@ -234,8 +234,115 @@ main section img {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                PAGE 2                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.rivers-part img {
+    width: 500px;
+    height: auto;
+    float: right;
+    border-radius: 25px;
+
+}
+
+#floatleft {
+    float: left;
+}
+
+.rivers-part p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 1.2em; 
+}
+
+.az {
+    align-content: center;
+    background-color: #5995ed;
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-left: 125px;
+    padding: 30px;
+    width: 80%;
+    height: auto;
+
+}
+.az h3 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    
+}
 
 
+.ut {
+    background-color: #6f7364;
+    border-radius: 25px;
+    margin: 100px;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+    margin-left: 210px;
+}
+.ut h2 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    color: #ffffff;
+}
+.ut p {
+    color: #ffffff;
+}
+
+
+.id{
+    background-color: #5995ed;
+    border-radius: 25px;
+    margin: 100px;
+    padding: 40px;
+}
+.id h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
 
