@@ -180,6 +180,8 @@ footer .social img {
 
 #hero-img {
     width:  100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #hero {
@@ -240,7 +242,8 @@ main section img {
     width: 500px;
     height: auto;
     float: right;
-    border-radius: 25px;
+    border-radius: 30px;
+    padding: 20px;
 
 }
 
@@ -255,7 +258,7 @@ main section img {
 }
 
 .az {
-    align-content: center;
+    
     background-color: #5995ed;
     border-radius: 25px;
     margin-top: 100px;
@@ -263,12 +266,12 @@ main section img {
     padding: 30px;
     width: 80%;
     height: auto;
+    box-shadow: 5px 5px 10px black;
 
 }
 .az h3 {
     font-family: var(--heading-font);
     font-size: 2em;
-    
 }
 
 
@@ -276,10 +279,11 @@ main section img {
     background-color: #6f7364;
     border-radius: 25px;
     margin: 100px;
-    padding: 20px;
+    padding: 25px;
     width: 70%;
     height: auto;
     margin-left: 210px;
+    box-shadow: -5px 5px 10px black;
 }
 .ut h2 {
     font-family: var(--heading-font);
@@ -296,48 +300,12 @@ main section img {
     border-radius: 25px;
     margin: 100px;
     padding: 40px;
+    box-shadow: 5px 5px 10px black;
 }
 .id h1 {
     font-family: var(--heading-font);
     font-size: 2em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
