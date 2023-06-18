@@ -105,7 +105,8 @@ header h1, header p {
     text-align: center;
     
 }
-header nav a{
+header nav p {
+    text-align: center;
     font-size: 16px;
     padding: 35px;
     text-align: center;
@@ -113,16 +114,19 @@ header nav a{
 }
 header nav {
     background-color: #00008B;
-    padding: 15px;
+    
     position: relative;
     z-index: 1;
     color: white;
     text-align: center;
     font-family: var(--headers-font);
+    border-radius: 25px;
 
 }
 footer {
     margin-top: auto;
+    font-family: var(--paragraphs-font);
+    
 }
 footer, footer p{
     text-align: center;
@@ -150,23 +154,25 @@ main p {
     padding: 15px;
 }
 #the_windows {
-    padding-top: 20px;
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-row: repeat(12, 1fr);
     gap: 80px;
+    margin-top: 100px;
     
 }
 .left {
     border-radius: 15px;
-    grid-column: 2/4;
-    grid-row: 1/10;
+    grid-column: 3/6;
+    grid-row: 1/8;
     background-color: #333333;
+    font-family: var(--paragraphs-font);
 }
 .right  {
     border-radius: 15px;
-    grid-column: 9/11;
-    grid-row: 1/10;
+    grid-column: 8/11;
+    grid-row: 1/6;
     background-color: #8D99AE;
 }
 .bottom {
@@ -177,24 +183,38 @@ main p {
     grid-row: 11/12;
     background-color: #191970;
     margin-bottom: 20px;
+    display: flex;
+    padding: 25px;
 
 }
+
+.bottom img {
+    width: 150px;
+    height: auto;
+    border-radius: 25px;
+
+}
+
 .middle-one {
-    border-radius: 15px;
-    background-color: #333333;
-    grid-column: 5/8;
-    grid-row: 1/5;
+    width: 2fr;
+    height: 4fr;
+    transform: rotate(185deg);
+    grid-column: 6/8;
+    grid-row: 2/6;
+}
 
+.middle-two {
+    border-radius: 25px;
+    background-color: #191970;
+    grid-column: 7/10;
+    grid-row: 6/9;
 }
-.middle-two {border-radius: 15px;
-    background-color: #8D99AE;
-    grid-column: 5/8;
-    grid-row: 4/8;
-}
-.middle-three {border-radius: 15px;
+.middle-three {
+    border-radius: 15px;
     background-color: #191970;
     grid-column: 5/8;
     grid-row: 9/11;
+    text-align: center;
 
 }
 
@@ -240,4 +260,29 @@ main p {
     font-family: var(--paragraphs-font);
     margin-top: -25px;
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.shootingstar {
+    width: 292px;
+    height: 90px;
+    transform: rotate(20deg);
 }
