@@ -29,7 +29,7 @@
     align-items: center;*/
     z-index: -1;
 }
-section .star {
+div .star {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,35 +38,35 @@ section .star {
 
     animation: animate 8s ease-in-out infinite;
 }
-section .star.star1 {
+div .star.star1 {
     animation-delay: 0s;
     background: url(star1.png);
 }
-section .star.star2 {
+div .star.star2 {
     animation-delay: -1s;
     background: url(star2.png);
 }
-section .star.star3 {
+div .star.star3 {
     animation-delay: -2s;
     background: url(star3.png);
 }
-section .star.star4 {
+div .star.star4 {
     animation-delay: -3s;
     background: url(star4.png);
 }
-section .star.star5 {
+div .star.star5 {
     animation-delay: -4s;
     background: url(star5.png);
 }
-section .star.star6 {
+div .star.star6 {
     animation-delay: -5s;
     background: url(star6.png);
 }
-section .star.star7 {
+div .star.star7 {
     animation-delay: -6s;
     background: url(star7.png);
 }
-section .star.star8 {
+div .star.star8 {
     animation-delay: -7s;
     background: url(star8.png);
 }
