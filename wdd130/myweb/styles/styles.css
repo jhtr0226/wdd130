@@ -408,3 +408,45 @@ h3 {
     width: 100px;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    header nav p {
+      padding: 15px;
+    }
+    #content {
+      max-width: 100%;
+      padding: 10px;
+    }
+    .background-section {
+      position: static;
+      height: auto;
+    }
+    .background-section .star {
+      display: none;
+    }
+    #the_windows {
+      display: block;
+      margin-top: 20px;
+    }
+    .left, .right, .middle-minus-cero, .middle-cero, .middle-one, .middle-two, .middle-three, .get-to-know-me, .faq, .call-me {
+      grid-column: auto;
+      grid-row: auto;
+      margin: 10px;
+    }
+    .middle-one {
+      margin-bottom: 100px;
+    }
+  }
