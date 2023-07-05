@@ -419,38 +419,3 @@ h3 {
 
 
 
-@media (max-width: 767px) {
-    /* Styles for screens up to 767px wide (typically mobile devices) */
-  
-    /* Adjust the layout */
-    #content {
-      max-width: 100%;
-      padding: 0 20px; /* Add some padding to the sides */
-    }
-  
-    /* Modify specific elements */
-    .left,
-    .right,
-    .bottom,
-    .middle-minus-cero,
-    .middle-cero,
-    .middle-one,
-    .middle-two,
-    .middle-three,
-    .get-to-know-me,
-    .faq,
-    .call-me {
-      grid-column: 1/8; /* Expand the elements to full width */
-      margin: 0; /* Remove any margins */
-    }
-  
-    /* Adjust font sizes or other styles as needed */
-    header h1 {
-      font-size: 2em;
-    }
-  
-    /* Hide or show elements if necessary */
-    .background-section {
-      display: none; /* Hide the background section if desired */
-    }
-  }
