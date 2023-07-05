@@ -419,34 +419,38 @@ h3 {
 
 
 
-@media (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-    header nav p {
-      padding: 15px;
-    }
+@media (max-width: 767px) {
+    /* Styles for screens up to 767px wide (typically mobile devices) */
+  
+    /* Adjust the layout */
     #content {
       max-width: 100%;
-      padding: 10px;
+      padding: 0 20px; /* Add some padding to the sides */
     }
+  
+    /* Modify specific elements */
+    .left,
+    .right,
+    .bottom,
+    .middle-minus-cero,
+    .middle-cero,
+    .middle-one,
+    .middle-two,
+    .middle-three,
+    .get-to-know-me,
+    .faq,
+    .call-me {
+      grid-column: 1/8; /* Expand the elements to full width */
+      margin: 0; /* Remove any margins */
+    }
+  
+    /* Adjust font sizes or other styles as needed */
+    header h1 {
+      font-size: 2em;
+    }
+  
+    /* Hide or show elements if necessary */
     .background-section {
-      position: static;
-      height: auto;
-    }
-    .background-section .star {
-      display: none;
-    }
-    #the_windows {
-      display: block;
-      margin-top: 20px;
-    }
-    .left, .right, .middle-minus-cero, .middle-cero, .middle-one, .middle-two, .middle-three, .get-to-know-me, .faq, .call-me {
-      grid-column: auto;
-      grid-row: auto;
-      margin: 10px;
-    }
-    .middle-one {
-      margin-bottom: 100px;
+      display: none; /* Hide the background section if desired */
     }
   }
