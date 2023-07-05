@@ -38,19 +38,19 @@ div .star {
 
     animation: animate 8s ease-in-out infinite;
 }
-div .star.star1 {
+div.star.star1 {
     animation-delay: 0s;
     background: url(star1.png);
 }
-div .star.star2 {
+div.star.star2 {
     animation-delay: -1s;
     background: url(star2.png);
 }
-div .star.star3 {
+div.star.star3 {
     animation-delay: -2s;
     background: url(star3.png);
 }
-div .star.star4 {
+div.star.star4 {
     animation-delay: -3s;
     background: url(star4.png);
 }
@@ -58,15 +58,15 @@ div .star.star5 {
     animation-delay: -4s;
     background: url(star5.png);
 }
-div .star.star6 {
+div.star.star6 {
     animation-delay: -5s;
     background: url(star6.png);
 }
-div .star.star7 {
+div.star.star7 {
     animation-delay: -6s;
     background: url(star7.png);
 }
-div .star.star8 {
+div.star.star8 {
     animation-delay: -7s;
     background: url(star8.png);
 }
@@ -419,6 +419,38 @@ h3 {
 
 
 
-@media (max-width: 480px) {
-    /* CSS rules for smartphones */
+@media (max-width: 767px) {
+    /* Styles for screens up to 767px wide (typically mobile devices) */
+  
+    /* Adjust the layout */
+    #content {
+      max-width: 100%;
+      padding: 0 20px; /* Add some padding to the sides */
+    }
+  
+    /* Modify specific elements */
+    .left,
+    .right,
+    .bottom,
+    .middle-minus-cero,
+    .middle-cero,
+    .middle-one,
+    .middle-two,
+    .middle-three,
+    .get-to-know-me,
+    .faq,
+    .call-me {
+      grid-column: 1/8; /* Expand the elements to full width */
+      margin: 0; /* Remove any margins */
+    }
+  
+    /* Adjust font sizes or other styles as needed */
+    header h1 {
+      font-size: 2em;
+    }
+  
+    /* Hide or show elements if necessary */
+    .background-section {
+      display: none; /* Hide the background section if desired */
+    }
   }
