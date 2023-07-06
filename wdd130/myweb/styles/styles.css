@@ -128,6 +128,7 @@ footer, footer p{
 footer a, header a {
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
 }
 footer p a:hover, header a:hover {
     text-decoration: underline;
@@ -372,7 +373,7 @@ h2 {
     line-height: 45px;
     font-family: var(--paragraphs-font);
 }
-.get-to-know-me, a {
+.get-to-know-me {
     text-decoration: none;
 }
 .get-to-know-me a:hover {
@@ -416,13 +417,13 @@ h3 {
 
 
 .button {
-    margin-left: 400px;
+    margin-left: 410px;
     border-radius: 4px;
     background-color: #808080;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     padding: 10px;
     width: 200px;
     transition: all 0.5s;
