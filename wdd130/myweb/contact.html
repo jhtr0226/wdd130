@@ -5,88 +5,93 @@
   <title>thirdpage</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:ital,wght@1,500&family=Josefin+Slab:ital,wght@1,500&family=Orbitron:wght@500&display=swap');
+    :root {
+    --headers-font: "Orbitron";
+    --paragraphs-font: Exo, Helvetica, sans-serif;
+    }
     form {
-      /* Center the form on the page */
       margin: 0 auto;
-      width: 1000px;
-      /* Form outline */
-      padding: 2em;
-      border: 2px solid #ccc;
-      border-radius: 1em;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    form li + li {
-       margin-top: 1em;
-    }
-
-    label {
-      /* Uniform size & alignment */
-      display: inline-block;
-      width: 100px;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
       text-align: center;
+    }
+    /* Form fields */
+    form div {
+      text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      text-align: center;
+      font-family: var(--headers-font);
       color: white;
+      margin-bottom: 25px;
+      text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
     }
-
-    input, textarea {
-      /* To make sure that all text fields have the same font settings
-      By default, textareas have a monospace font */
-      font: 1em sans-serif;
-
-      /* Uniform text field size */
-      width: 300px;
-      box-sizing: border-box;
-
-      /* Match form field borders */
-      border: 1px solid #999;
-    }
-
-    input:focus, textarea:focus {
-      /* Additional highlight for focused elements */
-      border-color: #000;
-    }
-
-    textarea {
-      /* Align multiline text fields with their labels */
+    #name {
+      margin-bottom: 100px; 
+      width: 100%;
+      box-shadow: 5px 5px 10px white;
+      padding: 8px;
+      border: 1px solid white;
+      border-radius: 4px;
+      font-family: var(--paragraphs-font);
+      background-color: black;
+      color: white;
+      font-size: 1em;
       vertical-align: top;
-
-      /* Provide space to type some text */
-      height: 5em;
+    }
+    #email {
+      margin-bottom: 100px; 
+      width: 100%;
+      box-shadow: -5px 5px 10px white;
+      padding: 8px;
+      border: 1px solid white;
+      border-radius: 4px;
+      font-family: var(--paragraphs-font);
+      background-color: black;
+      color: white;
+      font-size: 1em;
+      vertical-align: top;
+    }
+    #details {
+      padding: 8px;
+      margin-left: -170px;
+      width: 700px;
+      height: 250px;
+      text-align: left;
+      direction: ltr;
+      border: 1px solid white;
+      border-radius: 4px;
+      font-family: var(--paragraphs-font);
+      background-color: black;
+      color: white;
+      font-size: 1em;
+      scrollbar-width: thin;
+      scrollbar-color: transparent;
+      box-shadow: 10px 0 10px 5px #8D99AE, -10px 0 10px 5px rgba(0, 0, 139, 1.5)
+    }
+    #details:focus {
+      outline: none;
     }
 
-    .button {
-      /* Align buttons with the text fields */
-      padding-left: 90px; /* same size as the label elements */
-    }
-
-    .button1 {
-      /* This extra margin represent roughly the same space as the space
-      between the labels and their text fields */
-      margin-left: 0.5em;
-    }
     #feedback {
-      background-color: antiquewhite;
+      background-color: rgba(51, 51, 51, 0.8);
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       padding: .5em;
-      /* make this element invisible until we are ready for it */
-      display: none;      
+      display: none;
+      color: white;  
+      text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
+      text-align: center;
     }
-    .moveDown {
-      margin-top: 3em;
-    }
-    main {
-        
-      padding-top: 200px;
-        
-    }
+
   </style>
 </head>
 <body>
@@ -134,37 +139,30 @@
           <p class="q1">Q - How much does it cost to get a website?</p> <p class="q2">A - The starting price per page is currently $15.00, but as with everything these days, the prices are subject to change.</p>
         </section>
       </div>
-      <section class="call-me">
-          <div id="feedback"></div>
-            <form action="/my-handing-form-page">
-              <ul>
-                <li>
-                  <img id="pc" src="images/contactus.png" alt="person-in-a-pc">
-                  <label for="name">Name</label>
-                  <input type="text" name="user_name" id="name">
-                </li>
-                <li>
-                  <label for="mail">Email</label>
-                  <input type="text" name="user_email" id="mail">
-                </li>
-                
-                <li>
-                  <label for="msg">Message</label>
-                  <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
-                </li>
-                <li class="button1">
-                  <button type="submit">Submit</button>
-                </li>
-              </ul>
-            </form>
+      <div id="feedback"></div>
+      <section class="call">
+
+        <img id="pc" src="images/contactus.png" alt="person-in-a-pc">
+        <form>          
+          <div>
+            <label class="name" for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="off">
           </div>
+          <div>
+            <label class="email" for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="off">
+          </div>
+          <div>
+            <label class="details" for="details">Details</label>
+            <textarea rows="5" cols="60" type="details" id="details" name="details" autocomplete="off"></textarea>
+
+          </div>
+          <div>
+            <button type="submit" class="get"><span>Submit</span></button>
+          </div>
+        </form>
+      
       </section>
-
-
-
-
-
-
 
     </main>
     <footer>
@@ -188,5 +186,24 @@
       <p class="copy">CosmoWebS &copy; 2023 - Johann Tellez</p>
     </footer>
   </div>
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.elements.name.value +'! Thank you! I will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+        formElement.reset()
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
